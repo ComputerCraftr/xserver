@@ -2185,6 +2185,13 @@ drmmode_load_cursor_argb_check(xf86CrtcPtr crtc, CARD32 *image)
     drmmode_crtc->cursor_src_x = src_x;
     drmmode_crtc->cursor_src_y = src_y;
 
+    if (drmmode_crtc->cursor_rotation != rotation) {
+        xf86DrvMsg(crtc->scrn->scrnIndex, X_WARNING,
+                   "Cursor rotation change: rotation=0x%x image=%dx%d cursor=%dx%d glyph=%dx%d crop=%dx%d\n",
+                   rotation, image_width, image_height, cursor_width, cursor_height,
+                   glyph_width, glyph_height, crop_width, crop_height);
+    }
+
     /* cursor should be mapped already */
     drmmode_paint_cursor(drmmode_cursor.bo, cursor_pitch, cursor_width, cursor_height,
                          image, image_width, image_height,
