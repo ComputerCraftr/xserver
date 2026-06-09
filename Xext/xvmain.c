@@ -77,14 +77,12 @@ SOFTWARE.
 
 #include <string.h>
 #include <X11/X.h>
-#include <X11/Xproto.h>
 #include <X11/extensions/Xv.h>
 #include <X11/extensions/Xvproto.h>
 
 #include "dix/dix_priv.h"
 #include "dix/screen_hooks_priv.h"
 #include "miext/extinit_priv.h"
-#include "Xext/panoramiX.h"
 #include "Xext/panoramiXsrv.h"
 #include "Xext/xvdix_priv.h"
 
@@ -97,8 +95,6 @@ SOFTWARE.
 #include "extnsionst.h"
 #include "dixstruct.h"
 #include "resource.h"
-#include "opaque.h"
-#include "input.h"
 #include "xvdisp.h"
 
 #define SCREEN_PROLOGUE(pScreen, field) ((pScreen)->field = ((XvScreenPtr) \

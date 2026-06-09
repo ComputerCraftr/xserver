@@ -3,7 +3,6 @@
 #include <dix-config.h>
 
 #include <inttypes.h>
-#include <X11/Xmd.h>
 
 #include "dix/dix_priv.h"
 #include "dix/property_priv.h"

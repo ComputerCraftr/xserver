@@ -29,7 +29,6 @@ from The Open Group.
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include <X11/extensions/shm.h>
 
 #include "include/shmint.h"
 #include "mi/mi_priv.h"

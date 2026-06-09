@@ -31,19 +31,15 @@
 
 #include <dix-config.h>
 
-#include <X11/Xmd.h>
 #include <X11/X.h>
 #include <X11/extensions/XI2proto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/exevents_priv.h"
 #include "dix/request_priv.h"
 #include "os/fmt.h"
 #include "Xi/handlers.h"
 
-#include "inputstr.h"
 #include "exglobals.h"
-#include "misc.h"
 
 extern XExtensionVersion XIVersion;     /* defined in getvers.c */
 

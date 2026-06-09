@@ -14,32 +14,26 @@ is" without express or implied warranty.
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 
 #include "dix/cursor_priv.h"
-#include "dix/inpututils_priv.h"
+#include "dix/inpututils_priv.h" /* IWYU pragma: keep */
 #include "mi/mi_priv.h"
 
 #include "screenint.h"
 #include "input.h"
 #include "misc.h"
-#include "scrnintstr.h"
 #include "windowstr.h"
-#include "servermd.h"
 #include "inputstr.h"
 
 #include "xnest-xcb.h"
 
 #include "Args.h"
 #include "Color.h"
-#include "Display.h"
 #include "Screen.h"
 #include "XNWindow.h"
 #include "Events.h"
 #include "Keyboard.h"
 #include "Pointer.h"
-#include "mipointer.h"
 
 CARD32 lastEventTime = 0;
 

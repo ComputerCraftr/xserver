@@ -32,10 +32,8 @@
 
 #include <string.h>
 #include <scrnintstr.h>
-#include <windowstr.h>
 #include <dixstruct.h>
 #include <extnsionst.h>
-#include <glx_extinit.h>
 
 #include <GL/glxproto.h>
 #include "vndservervendor.h"

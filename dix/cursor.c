@@ -58,8 +58,7 @@ SOFTWARE.
 #include "scrnintstr.h"
 #include "dixstruct.h"
 #include "cursorstr.h"
-#include "dixfontstr.h"
-#include "opaque.h"
+#include "dixfontstr.h" /* IWYU pragma: keep */
 #include "inputstr.h"
 #include "xace.h"
 

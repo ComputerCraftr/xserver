@@ -43,7 +43,6 @@
 #include "Xext/panoramiXsrv.h"
 
 #include "misc.h"
-#include "os.h"
 #include "dixstruct.h"
 #include "resource.h"
 #include "scrnintstr.h"

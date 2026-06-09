@@ -23,9 +23,7 @@
 
 #include "present/present_priv.h"
 
-#include <gcstruct.h>
 #include <misync.h>
-#include <misyncstr.h>
 
 /*
  * Wraps SyncFence objects so we can add a SyncTrigger to find out

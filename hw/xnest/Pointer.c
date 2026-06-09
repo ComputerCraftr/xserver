@@ -14,14 +14,9 @@ is" without express or implied warranty.
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include <X11/Xproto.h>
-#include "screenint.h"
 #include "inputstr.h"
 #include "input.h"
 #include "misc.h"
-#include "scrnintstr.h"
-#include "servermd.h"
-#include "mipointer.h"
 
 #include "xnest-xcb.h"
 

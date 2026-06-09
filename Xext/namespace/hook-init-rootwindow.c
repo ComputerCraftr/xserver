@@ -5,7 +5,6 @@
 #include <inttypes.h>
 #include <stdio.h>
 #include <X11/Xatom.h>
-#include <X11/Xmd.h>
 
 #include "dix/window_priv.h"
 

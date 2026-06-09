@@ -22,7 +22,6 @@
 
 #include <dix-config.h>
 
-#include <X11/Xos.h>
 #include <X11/Xdefs.h>
 
 #include "os/busfault.h"

@@ -35,18 +35,14 @@
 
 #include <dix-config.h>
 
-#include <X11/Xfuncproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "miext/extinit_priv.h"
 
 #include "pseudoramiX.h"
 #include "extnsionst.h"
 #include "dixstruct.h"
-#include "window.h"
 #include <X11/extensions/panoramiXproto.h>
-#include "globals.h"
 
 #define TRACE LogMessageVerb(X_NONE, 10, "TRACE " __FILE__ ":%s", __func__)
 #define DEBUG_LOG(...) LogMessageVerb(X_NONE, 3, __VA_ARGS__);

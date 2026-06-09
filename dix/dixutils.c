@@ -92,12 +92,10 @@ Author:  Adobe Systems Incorporated
 #include "dix/screenint_priv.h"
 
 #include "misc.h"
-#include "windowstr.h"
 #include "dixstruct.h"
 #include "pixmapstr.h"
 #include "gcstruct.h"
 #include "scrnintstr.h"
-#include "xace.h"
 
 /*
  * CompareTimeStamps returns -1, 0, or +1 depending on if the first

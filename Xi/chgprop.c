@@ -55,15 +55,13 @@ SOFTWARE.
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 
-#include "dix/dix_priv.h"
+#include "dix/dix_priv.h" /* IWYU pragma: keep */
 #include "dix/exevents_priv.h"
 #include "dix/request_priv.h"
 #include "dix/window_priv.h"
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "windowstr.h"
-#include "exevents.h"
 #include "exglobals.h"
 #include "grabdev.h"
 

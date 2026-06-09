@@ -34,12 +34,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/rpcbuf_priv.h"
 
 #include "glxserver.h"
-#include "glxutil.h"
 #include "glxext.h"
 #include "indirect_dispatch.h"
 #include "unpack.h"

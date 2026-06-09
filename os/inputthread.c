@@ -38,8 +38,6 @@
 #include "os/log_priv.h"
 #include "os/ossock.h"
 
-#include "inputstr.h"
-#include "opaque.h"
 #include "osdep.h"
 
 #if INPUTTHREAD

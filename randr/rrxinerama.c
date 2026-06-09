@@ -69,16 +69,14 @@
  */
 #include <dix-config.h>
 
-#include <X11/Xmd.h>
+#include <X11/Xmd.h> /* IWYU pragma: keep */
 #include <X11/extensions/panoramiXproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/screenint_priv.h"
 #include "include/extinit.h"
 #include "randr/randrstr_priv.h"
 
-#include "swaprep.h"
 #include "protocol-versions.h"
 
 /* Xinerama is not multi-screen capable; just report about screen 0 */

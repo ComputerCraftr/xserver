@@ -15,10 +15,9 @@ is" without express or implied warranty.
 
 #include <stdint.h>
 
-#include <X11/fonts/fontstruct.h>
+#include <X11/fonts/fontstruct.h> /* IWYU pragma: keep */
 #include <X11/X.h>
 #include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 
 #include <xcb/xcb.h>
 #include <xcb/xcb_aux.h>
@@ -26,18 +25,16 @@ is" without express or implied warranty.
 #include "include/regionstr.h"
 
 #include "gcstruct.h"
-#include "windowstr.h"
-#include "pixmapstr.h"
+#include "pixmapstr.h" /* IWYU pragma: keep */
 #include "scrnintstr.h"
-#include "mistruct.h"
 
 #include "xnest-xcb.h"
 
 #include "Display.h"
 #include "XNGC.h"
 #include "GCOps.h"
-#include "Drawable.h"
 #include "XNFont.h"
+#include "XNPixmap.h"
 #include "Color.h"
 
 DevPrivateKeyRec xnestGCPrivateKeyRec;

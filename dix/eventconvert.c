@@ -34,12 +34,10 @@
 #include <X11/X.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XI2proto.h>
-#include <X11/extensions/XI.h>
 #include <X11/extensions/XI2.h>
 
 #include "dix/dix_priv.h"
 #include "dix/eventconvert.h"
-#include "dix/exevents_priv.h"
 #include "dix/extension_priv.h"
 #include "dix/inpututils_priv.h"
 
@@ -48,7 +46,6 @@
 #include "misc.h"
 #include "eventstr.h"
 #include "exglobals.h"
-#include "xiquerydevice.h"
 #include "xkbsrv.h"
 
 static int countValuators(DeviceEvent *ev, int *first);

@@ -19,19 +19,12 @@ is" without express or implied warranty.
 #endif
 
 #include <X11/X.h>
-#include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 #include <X11/keysym.h>
-#include <X11/extensions/XKB.h>
 #include <xcb/xkb.h>
 
 #include "os/osdep.h"
 
-#include "screenint.h"
 #include "inputstr.h"
-#include "misc.h"
-#include "scrnintstr.h"
-#include "servermd.h"
 
 #include "xnest-xcb.h"
 

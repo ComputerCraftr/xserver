@@ -27,11 +27,10 @@
 
 #include <string.h>
 
-#include "fb/fbpict_priv.h"
+#include "fb/fbpict_priv.h" /* IWYU pragma: keep */
 #include "include/mipict.h"
 
 #include "fb.h"
-#include "glyphstr_priv.h"
 #include "picturestr.h"
 
 void

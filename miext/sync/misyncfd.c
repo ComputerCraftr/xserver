@@ -22,11 +22,9 @@
 
 #include <dix-config.h>
 
-#include "dix/input_priv.h"
 
 #include "scrnintstr.h"
 #include "misync_priv.h"
-#include "misyncstr.h"
 #include "misyncfd.h"
 #include "pixmapstr.h"
 

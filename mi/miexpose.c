@@ -92,9 +92,6 @@ Equipment Corporation.
 #include "gcstruct.h"
 #include "windowstr.h"
 #include "pixmap.h"
-#include "input.h"
-#include "dixstruct.h"
-#include "globals.h"
 
 /*
     machine-independent graphics exposure code.  any device that uses

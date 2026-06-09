@@ -19,13 +19,11 @@ is" without express or implied warranty.
 
 #include <X11/X.h>
 #include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 
 #include "dix/window_priv.h"
 #include "include/regionstr.h"
 #include "mi/mi_priv.h"
 
-#include "gcstruct.h"
 #include "window.h"
 #include "windowstr.h"
 #include "pixmapstr.h"
@@ -33,12 +31,10 @@ is" without express or implied warranty.
 
 #include "xnest-xcb.h"
 
-#include "Display.h"
-#include "Screen.h"
-#include "XNGC.h"
-#include "Drawable.h"
+#include "Screen.h" /* IWYU pragma: keep */
+#include "XNWindow.h"
+#include "XNPixmap.h"
 #include "Color.h"
-#include "Events.h"
 #include "Args.h"
 
 DevPrivateKeyRec xnestWindowPrivateKeyRec;

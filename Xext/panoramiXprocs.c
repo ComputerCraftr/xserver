@@ -42,12 +42,9 @@ Equipment Corporation.
 #include "Xext/panoramiXsrv.h"
 
 #include "windowstr.h"
-#include "dixfontstr.h"
 #include "gcstruct.h"
 #include "scrnintstr.h"
-#include "opaque.h"
-#include "inputstr.h"
-#include "migc.h"
+#include "servermd.h"
 #include "misc.h"
 #include "dixstruct.h"
 #include "resource.h"

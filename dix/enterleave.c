@@ -32,13 +32,12 @@
 #include <X11/extensions/XI2proto.h>
 
 #include "dix/dix_priv.h"
-#include "dix/eventconvert.h"
 #include "dix/extension_priv.h"
 #include "dix/input_priv.h"
 #include "dix/inpututils_priv.h"
 #include "dix/screenint_priv.h"
 #include "dix/window_priv.h"
-#include "include/extinit.h"
+#include "include/extinit.h" /* IWYU pragma: keep */
 #include "os/bug_priv.h"
 
 #include "inputstr.h"

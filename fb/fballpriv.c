@@ -22,7 +22,7 @@
 
 #include <dix-config.h>
 
-#include "fb/fb_priv.h"
+#include "fb/fb_priv.h" /* IWYU pragma: keep */
 
 static DevPrivateKeyRec fbScreenPrivateKeyRec;
 

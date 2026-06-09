@@ -31,14 +31,13 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 #include <math.h>
 #include <ctype.h>
 #include <X11/X.h>
-#include <X11/Xproto.h>
 #include <X11/keysym.h>
 
 #include "dix/cursor_priv.h"
 #include "dix/dix_priv.h"
 #include "dix/dixgrabs_priv.h"
 #include "dix/input_priv.h"
-#include "dix/inpututils_priv.h"
+#include "dix/inpututils_priv.h" /* IWYU pragma: keep */
 #include "dix/window_priv.h"
 #include "mi/mi_priv.h"
 #include "mi/mipointer_priv.h"
@@ -46,7 +45,6 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 #include "misc.h"
 #include "inputstr.h"
-#include "exevents.h"
 #include "eventstr.h"
 #include "mipointer.h"
 

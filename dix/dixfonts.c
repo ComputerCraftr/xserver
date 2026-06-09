@@ -64,21 +64,18 @@ Equipment Corporation.
 #include "dix/rpcbuf_priv.h"
 #include "dix/screenint_priv.h"
 #include "dix/server_priv.h"
-#include "dix/swaprep.h"
 #include "include/extinit.h"
 #include "include/gcstruct.h"
 #include "os/auth.h"
 #include "os/log_priv.h"
 
+#include "globals.h"
 #include "scrnintstr.h"
 #include "resource.h"
 #include "dixstruct.h"
-#include "cursorstr.h"
 #include "misc.h"
-#include "opaque.h"
-#include "dixfontstr.h"
+#include "dixfontstr.h" /* IWYU pragma: keep */
 #include "dixfont.h"
-#include "xace.h"
 
 #ifdef XF86BIGFONT
 #include "xf86bigfontsrv.h"

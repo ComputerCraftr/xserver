@@ -47,11 +47,9 @@
 
 #include "scrnintstr.h"
 #include "extnsionst.h"
-#include "gcstruct.h"
 #include "dixstruct.h"
 #include "dbestruct.h"
 #include "midbe.h"
-#include "xace.h"
 
 /* GLOBALS */
 Bool noDbeExtension = FALSE;

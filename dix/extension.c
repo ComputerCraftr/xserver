@@ -49,7 +49,6 @@ SOFTWARE.
 #include <X11/X.h>
 #include <X11/Xproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/extension_priv.h"
 #include "dix/registry_priv.h"
 #include "dix/request_priv.h"
@@ -57,11 +56,8 @@ SOFTWARE.
 #include "misc.h"
 #include "dixstruct.h"
 #include "extnsionst.h"
-#include "gcstruct.h"
-#include "scrnintstr.h"
 #include "dispatch.h"
 #include "privates.h"
-#include "xace.h"
 
 #define LAST_ERROR 255
 

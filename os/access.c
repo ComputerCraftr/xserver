@@ -90,11 +90,9 @@ SOFTWARE.
 #include <X11/Xproto.h>
 #include "misc.h"
 #include <errno.h>
-#include <sys/types.h>
 
 #include "dix/server_priv.h"
 #include "os/io_priv.h"
-#include "os/xhostname.h"
 
 #ifndef WIN32
 #include <sys/socket.h>
@@ -115,7 +113,6 @@ SOFTWARE.
 #endif
 
 #ifdef HAVE_SYS_UCRED_H
-#include <sys/ucred.h>
 #endif
 
 #ifdef HAVE_SYS_UN_H
@@ -175,11 +172,9 @@ SOFTWARE.
 
 #include "os/auth.h"
 #include "os/client_priv.h"
-#include "os/osdep.h"
 
 #include "dixstruct.h"
 
-#include "xace.h"
 
 #ifdef XDMCP
 #include "xdmcp.h"

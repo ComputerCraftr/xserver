@@ -22,9 +22,9 @@
 
 #include <dix-config.h>
 
-#include "fb.h"
-#include "miline.h"
-#include "mizerarc.h"
+#include "fb.h" /* IWYU pragma: keep */
+#include "miline.h" /* IWYU pragma: keep */
+#include "mizerarc.h" /* IWYU pragma: keep */
 
 #undef BRESSOLID
 #undef BRESDASH

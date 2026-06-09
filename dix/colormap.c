@@ -51,7 +51,6 @@ SOFTWARE.
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-#include <strings.h>
 
 #include "include/extinit.h"
 #include "dix/colormap_priv.h"
@@ -59,7 +58,6 @@ SOFTWARE.
 #include "dix/resource_priv.h"
 #include "dix/window_priv.h"
 #include "os/osdep.h"
-#include "os/bug_priv.h"
 
 #include "misc.h"
 #include "dix.h"

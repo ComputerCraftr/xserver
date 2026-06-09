@@ -82,11 +82,9 @@ SOFTWARE.
 
 #include <X11/X.h>
 #include <X11/Xproto.h>
-#include <X11/extensions/geproto.h>
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XI2proto.h>
-#include <X11/extensions/XKBproto.h>
 
 #include "dix/cursor_priv.h"
 #include "dix/devices_priv.h"
@@ -106,13 +104,10 @@ SOFTWARE.
 
 #include "inputstr.h"
 #include "windowstr.h"
-#include "miscstruct.h"
-#include "extnsionst.h"
 #include "exglobals.h"
 #include "eventstr.h"
 #include "scrnintstr.h"
 #include "xace.h"
-#include "xiquerydevice.h"      /* For List*Info */
 #include "eventstr.h"
 
 #define WID(w) ((w) ? ((w)->drawable.id) : 0)

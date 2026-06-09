@@ -30,16 +30,15 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 #include <X11/X.h>
 #include <X11/Xproto.h>
 #include <X11/extensions/XI.h>
-#include <X11/extensions/XKMformat.h>
+#include <X11/extensions/XKM.h>
 
 #include "dix/devices_priv.h"
-#include "dix/dix_priv.h"
+#include "dix/input_priv.h"
 #include "dix/request_priv.h"
 #include "dix/rpcbuf_priv.h"
 #include "dix/server_priv.h"
 #include "miext/extinit_priv.h"
 #include "os/osdep.h"
-#include "xkb/xkbfmisc_priv.h"
 #include "xkb/xkbsrv_priv.h"
 
 #include "misc.h"

@@ -67,9 +67,8 @@ SOFTWARE.
 #include "mi/mi_priv.h"
 #include "os/osdep.h"
 
-#include "windowstr.h"
 #include "gcstruct.h"
-#include "regionstr.h"
+#include "pixmapstr.h"
 #include "miwideline.h"
 
 typedef struct {

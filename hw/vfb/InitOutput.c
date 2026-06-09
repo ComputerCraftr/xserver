@@ -34,7 +34,6 @@ from The Open Group.
 #include <stdio.h>
 #include <X11/X.h>
 #include <X11/Xproto.h>
-#include <X11/Xos.h>
 
 #include "dix/colormap_priv.h"
 #include "dix/dix_priv.h"
@@ -51,18 +50,14 @@ from The Open Group.
 #include "servermd.h"
 #define PSZ 8
 #include "fb.h"
-#include "gcstruct.h"
-#include "input.h"
 #include "mipointer.h"
 #include "micmap.h"
-#include <sys/types.h>
 #ifdef HAVE_MMAP
 #include <sys/mman.h>
 #ifndef MAP_FILE
 #define MAP_FILE 0
 #endif
 #endif                          /* HAVE_MMAP */
-#include <sys/stat.h>
 #include <errno.h>
 #ifndef WIN32
 #include <sys/param.h>

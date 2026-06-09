@@ -110,7 +110,6 @@ Equipment Corporation.
 #include "dix/extension_priv.h"
 #include "dix/input_priv.h"
 #include "dix/gc_priv.h"
-#include "dix/registry_priv.h"
 #include "dix/request_priv.h"
 #include "dix/resource_priv.h"
 #include "dix/screenint_priv.h"
@@ -119,13 +118,12 @@ Equipment Corporation.
 #include "dix/server_priv.h"
 #include "dix/settings_priv.h"
 #include "dix/window_priv.h"
+#include "include/extinit.h"
 #include "include/resource.h"
-#include "miext/extinit_priv.h"
 #include "os/auth.h"
 #include "os/client_priv.h"
 #include "os/ddx_priv.h"
 #include "os/osdep.h"
-#include "os/probes_priv.h"
 #include "os/screensaver.h"
 
 #include "windowstr.h"
@@ -141,8 +139,6 @@ Equipment Corporation.
 #include "swapreq.h"
 #include "privates.h"
 #include "xace.h"
-#include "inputstr.h"
-#include "xkbsrv.h"
 #include "xfixesint.h"
 #include "dixstruct_priv.h"
 
@@ -4276,4 +4272,3 @@ DetachOffloadGPU(ScreenPtr secondary)
     assert(secondary->is_offload_secondary);
     secondary->is_offload_secondary = FALSE;
 }
-

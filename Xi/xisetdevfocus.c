@@ -30,7 +30,6 @@
 
 #include <dix-config.h>
 
-#include <X11/extensions/XI2.h>
 #include <X11/extensions/XI2proto.h>
 
 #include "dix/dix_priv.h"

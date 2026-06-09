@@ -32,16 +32,12 @@
 #include <dix-config.h>
 
 #include <stddef.h>             /* For NULL */
-#include "mi.h"
 #include "scrnintstr.h"
 #include "gcstruct.h"
 #include "pixmapstr.h"
 #include "windowstr.h"
 #include "dixfontstr.h"
-#include "fb.h"
 
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 
 #include "rootlessCommon.h"

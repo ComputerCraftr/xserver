@@ -7,7 +7,6 @@
 #include <X11/extensions/XKB.h>
 
 #include "dix/devices_priv.h"
-#include "dix/dix_priv.h"
 #include "dix/extension_priv.h"
 #include "dix/registry_priv.h"
 

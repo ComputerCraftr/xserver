@@ -49,12 +49,12 @@ from The Open Group.
 #include <dix-config.h>
 
 #include <stdlib.h>
-#include <X11/Xfuncproto.h>
+#include <X11/Xfuncproto.h> /* IWYU pragma: keep */
 
 #define XTRANS_TRANSPORT_C  /* used to flag Xtransint.h that it's being used
 			       here, not just #included in another file */
 
-#include "Xtransint.h"
+#include "Xtransint.h" /* IWYU pragma: keep */
 
 #ifdef __clang__
 #pragma clang diagnostic push

@@ -79,7 +79,6 @@ Equipment Corporation.
 
 #include "regionstr.h"
 #include <X11/Xprotostr.h>
-#include <X11/Xfuncproto.h>
 #include "gc.h"
 #include <pixman.h>
 

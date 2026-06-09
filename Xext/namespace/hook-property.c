@@ -4,8 +4,7 @@
 
 #include <stdio.h>
 
-#include "dix/dix_priv.h"
-#include "dix/registry_priv.h"
+#include "dix/resource_priv.h"
 #include "include/propertyst.h"
 #include "Xext/xacestr.h"
 

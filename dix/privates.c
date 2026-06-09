@@ -55,12 +55,13 @@ from The Open Group.
 #include "dix/colormap_priv.h"
 #include "dix/screenint_priv.h"
 
-#include "windowstr.h"
+#include "windowstr.h" /* IWYU pragma: keep */
 #include "resource.h"
 #include "privates.h"
 #include "gcstruct.h"
 #include "cursorstr.h"
 #include "inputstr.h"
+#include "pixmapstr.h"
 #include "scrnintstr.h"
 #include "extnsionst.h"
 #include "inputstr.h"

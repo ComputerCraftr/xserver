@@ -32,12 +32,10 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 #include <stdlib.h>
 #include <ctype.h>
 #include <unistd.h>
-#include <math.h>
 #include <X11/X.h>
-#include <X11/Xproto.h>
 #include <X11/keysym.h>
 #include <X11/Xatom.h>
-#include <X11/extensions/XKMformat.h>
+#include <X11/extensions/XKM.h>
 
 #include "dix/screenint_priv.h"
 #include "os/bug_priv.h"
@@ -47,7 +45,6 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 #include "misc.h"
 #include "inputstr.h"
-#include "opaque.h"
 #include "property.h"
 #include "scrnintstr.h"
 #include "xkbgeom_priv.h"

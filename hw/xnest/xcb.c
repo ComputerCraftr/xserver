@@ -10,8 +10,6 @@
 #include <xcb/xcb_icccm.h>
 
 #include <X11/X.h>
-#include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 #include <xcb/xkb.h>
 
 #include "include/gc.h"
@@ -20,7 +18,6 @@
 #include "xnest-xcb.h"
 #include "xnest-xkb.h"
 #include "XNGC.h"
-#include "Display.h"
 
 struct xnest_upstream_info xnestUpstreamInfo = { 0 };
 xnest_visual_t *xnestVisualMap;

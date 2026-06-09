@@ -51,13 +51,11 @@ SOFTWARE.
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include "windowstr.h"
 #include "gcstruct.h"
 #include "pixmapstr.h"
 #include "mi.h"
 #include "miscanfill.h"
 #include "mipoly.h"
-#include "regionstr.h"
 
 /*
  * Insert the given edge into the edge table.  First we must find the correct

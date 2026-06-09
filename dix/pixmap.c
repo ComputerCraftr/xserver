@@ -33,16 +33,14 @@ from The Open Group.
 
 #include "mi/mi_priv.h"
 
+#include "damage.h"
 #include "scrnintstr.h"
 #include "misc.h"
-#include "os.h"
-#include "windowstr.h"
-#include "resource.h"
-#include "dixstruct.h"
 #include "gcstruct.h"
+#include "pixmapstr.h"
 #include "servermd.h"
 #include "picturestr.h"
-#include "randrstr.h"
+#include "randrstr.h" /* IWYU pragma: keep */
 /*
  * Scratch pixmap APIs are provided for source and binary compatibility.  In
  * older versions, DIX would store a freed scratch pixmap for future use.  This

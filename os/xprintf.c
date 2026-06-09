@@ -58,7 +58,6 @@
 
 #include <dix-config.h>
 
-#include <X11/Xos.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <errno.h>

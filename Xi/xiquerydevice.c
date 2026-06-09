@@ -31,11 +31,9 @@
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include <X11/Xatom.h>
 #include <X11/extensions/XI2proto.h>
 
 #include "dix/devices_priv.h"
-#include "dix/dix_priv.h"
 #include "dix/exevents_priv.h"
 #include "dix/input_priv.h"
 #include "dix/inpututils_priv.h"
@@ -47,9 +45,7 @@
 #include "inputstr.h"
 #include "xkbstr.h"
 #include "xkbsrv.h"
-#include "xserver-properties.h"
 #include "exglobals.h"
-#include "privates.h"
 #include "xiquerydevice.h"
 
 static Bool ShouldSkipDevice(ClientPtr client, int deviceid, DeviceIntPtr d);

@@ -29,7 +29,6 @@
 #include "glxserver.h"
 #include "glxext.h"
 #include "indirect_dispatch.h"
-#include "opaque.h"
 
 #define ALL_VALID_FLAGS \
     (GLX_CONTEXT_DEBUG_BIT_ARB | GLX_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB \

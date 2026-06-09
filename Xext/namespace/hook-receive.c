@@ -2,7 +2,6 @@
 
 #include <dix-config.h>
 
-#include <X11/Xmd.h>
 
 #include "dix/extension_priv.h"
 #include "dix/registry_priv.h"

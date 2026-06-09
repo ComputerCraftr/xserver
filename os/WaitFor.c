@@ -59,7 +59,6 @@ SOFTWARE.
 #ifdef WIN32
 #include <X11/Xwinsock.h>
 #endif
-#include <X11/Xos.h>            /* for strings, fcntl, time */
 #include <X11/X.h>
 
 #include "dix/dix_priv.h"
@@ -72,7 +71,6 @@ SOFTWARE.
 #include "misc.h"
 #include "osdep.h"
 #include "dixstruct_priv.h"
-#include "globals.h"
 #ifdef DPMSExtension
 #include "dpmsproc.h"
 #endif

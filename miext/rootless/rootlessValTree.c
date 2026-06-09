@@ -101,7 +101,6 @@ Equipment Corporation.
 #include    "validate.h"
 #include    "windowstr.h"
 #include    "regionstr.h"
-#include    "globals.h"
 
 int RootlessMiValidateTree(WindowPtr pRoot, WindowPtr pChild, VTKind kind);
 

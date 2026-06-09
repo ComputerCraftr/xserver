@@ -44,22 +44,16 @@
 #include <dix-config.h>
 
 #include "dix/cursor_priv.h"
-#include "dix/dix_priv.h"
 #include "dix/input_priv.h"
 #include "dix/request_priv.h"
 #include "dix/resource_priv.h"
 #include "mi/mi_priv.h"
-#include "os/bug_priv.h"
 #include "Xi/handlers.h"
 
 #include "xibarriers.h"
 #include "scrnintstr.h"
-#include "cursorstr.h"
-#include "servermd.h"
-#include "mipointer.h"
 #include "inputstr.h"
 #include "windowstr.h"
-#include "xace.h"
 #include "list.h"
 #include "exglobals.h"
 #include "eventstr.h"

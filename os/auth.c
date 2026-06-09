@@ -37,8 +37,6 @@ from The Open Group.
 #include   <X11/Xauth.h>
 #include   "misc.h"
 #include   "osdep.h"
-#include   "dixstruct.h"
-#include   <sys/types.h>
 #include   <sys/stat.h>
 #include   <errno.h>
 #ifdef WIN32

@@ -30,12 +30,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
-#include <sys/time.h>
 #include <dlfcn.h>
 
 #include <GL/gl.h>
 #include <GL/internal/dri_interface.h>
-#include <GL/glxtokens.h>
 
 #include "scrnintstr.h"
 #include "pixmapstr.h"

@@ -55,17 +55,13 @@ SOFTWARE.
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/input_priv.h"
 #include "dix/request_priv.h"
 #include "dix/rpcbuf_priv.h"
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "XIstubs.h"
-#include "windowstr.h"          /* window structure  */
 #include "exglobals.h"
-#include "exevents.h"
 
 extern CARD8 event_base[];
 

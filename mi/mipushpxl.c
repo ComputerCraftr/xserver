@@ -49,7 +49,6 @@ SOFTWARE.
 #include "gcstruct.h"
 #include "scrnintstr.h"
 #include "pixmapstr.h"
-#include "regionstr.h"
 #include "mi.h"
 #include "servermd.h"
 

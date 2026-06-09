@@ -48,9 +48,8 @@ SOFTWARE.
 #include <X11/X.h>
 
 #include "misc.h"
-#include "scrnintstr.h"
 #include "gcstruct.h"
-#include "windowstr.h"
+#include "pixmapstr.h"
 #include "pixmap.h"
 #include "mi.h"
 #include "miline.h"

@@ -5,7 +5,6 @@
 
 #include <xcb/xcbext.h>
 #include <xcb/xkb.h>
-#include <xcb/xproto.h>
 
 #include "xnest-xkb.h"
 

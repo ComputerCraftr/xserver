@@ -1,7 +1,6 @@
 #include <dix-config.h>
 
 #include <stdio.h>
-#include <X11/Xmd.h>
 
 #include "dix/client_priv.h"
 #include "dix/devices_priv.h"
@@ -12,7 +11,7 @@
 #include "dix/server_priv.h"
 #include "include/os.h"
 #include "miext/extinit_priv.h"
-#include "Xext/xacestr.h"
+#include "Xext/xace.h"
 
 #include "namespace.h"
 #include "hooks.h"

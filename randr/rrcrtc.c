@@ -30,9 +30,7 @@
 #include "randr/randrstr_priv.h"
 #include "randr/rrdispatch_priv.h"
 #include "os/bug_priv.h"
-#include "os/osdep.h"
 
-#include "swaprep.h"
 #include "mipointer.h"
 
 /* xFixed is just `int`, so better check whether it's really 32bit */

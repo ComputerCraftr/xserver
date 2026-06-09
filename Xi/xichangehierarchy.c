@@ -34,9 +34,7 @@
 
 #include <X11/X.h>              /* for inputstr.h    */
 #include <X11/Xproto.h>         /* Request macro     */
-#include <X11/extensions/XI.h>
 #include <X11/extensions/XI2proto.h>
-#include <X11/extensions/geproto.h>
 
 #include "dix/dix_priv.h"
 #include "dix/exevents_priv.h"
@@ -47,14 +45,9 @@
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "windowstr.h"          /* window structure  */
-#include "scrnintstr.h"         /* screen structure  */
-#include "extnsionst.h"
 #include "exglobals.h"
 #include "misc.h"
-#include "xace.h"
 #include "xiquerydevice.h"      /* for GetDeviceUse */
-#include "xkbsrv.h"
 #include "xichangehierarchy.h"
 #include "xibarriers.h"
 

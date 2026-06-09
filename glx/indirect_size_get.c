@@ -27,7 +27,7 @@
 #include <X11/Xfuncproto.h>
 #include <GL/gl.h>
 #include "indirect_size_get.h"
-#include "glxserver.h"
+#include "glxserver.h" /* IWYU pragma: keep */
 #include "indirect_util.h"
 #include "indirect_size.h"
 

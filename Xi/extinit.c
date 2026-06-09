@@ -58,7 +58,6 @@ SOFTWARE.
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XI2proto.h>
-#include <X11/extensions/geproto.h>
 
 #include "dix/dix_priv.h"
 #include "dix/input_priv.h"
@@ -68,7 +67,6 @@ SOFTWARE.
 #include "Xext/geext_priv.h"
 
 #include "inputstr.h"
-#include "gcstruct.h"           /* pointer for extnsionst.h */
 #include "extnsionst.h"         /* extension entry   */
 #include "exglobals.h"
 #include "swaprep.h"

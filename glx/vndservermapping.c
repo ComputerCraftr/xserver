@@ -32,7 +32,6 @@
 
 #include <pixmapstr.h>
 
-#include "vndservervendor.h"
 
 static ClientPtr requestClient = NULL;
 

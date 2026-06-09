@@ -42,8 +42,6 @@
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "windowstr.h"          /* window structure  */
-#include "exglobals.h"          /* BadDevice */
 
 int
 ProcXIGrabDevice(ClientPtr client)

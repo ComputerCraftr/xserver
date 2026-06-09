@@ -46,11 +46,9 @@ SOFTWARE.
 
 #include <dix-config.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/selection_priv.h"
 
-#include "windowstr.h"
 #include "dixstruct.h"
 #include "dispatch.h"
 #include "xace.h"

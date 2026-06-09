@@ -27,10 +27,6 @@
 #include "include/mipict.h"
 
 #include "scrnintstr.h"
-#include "gcstruct.h"
-#include "pixmapstr.h"
-#include "windowstr.h"
-#include "mi.h"
 #include "picturestr.h"
 
 #define NUM_CUBE_LEVELS	4

@@ -3,13 +3,10 @@
 
 #include <string.h>
 #include <X11/X.h>
-#include <X11/Xfuncproto.h>
 #include <X11/Xproto.h>
 #include <X11/extensions/XvMC.h>
-#include <X11/extensions/Xvproto.h>
 #include <X11/extensions/XvMCproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/screen_hooks_priv.h"
 #include "include/xvmcext.h"
@@ -17,12 +14,10 @@
 #include "Xext/xvdix_priv.h"
 
 #include "misc.h"
-#include "os.h"
 #include "dixstruct.h"
 #include "resource.h"
 #include "scrnintstr.h"
 #include "extnsionst.h"
-#include "servermd.h"
 
 #define SERVER_XVMC_MAJOR_VERSION               1
 #define SERVER_XVMC_MINOR_VERSION               1

@@ -4,16 +4,12 @@
 
 #include <stdio.h>
 #include <X11/Xdefs.h> // syncproto.h is broken
-#include <X11/Xmd.h>
 #include <X11/extensions/syncproto.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XKB.h>
 #include <X11/extensions/xfixeswire.h>
 
-#include "dix/dix_priv.h"
 #include "dix/extension_priv.h"
-#include "dix/registry_priv.h"
-#include "Xext/xacestr.h"
 
 #include "namespace.h"
 #include "hooks.h"

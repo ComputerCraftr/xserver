@@ -30,13 +30,11 @@
 
 #include <dix-config.h>
 
-#include "dix/request_priv.h"
 
 #include "glxserver.h"
 #include "glxext.h"
 #include "singlesize.h"
 #include "unpack.h"
-#include "indirect_size_get.h"
 #include "indirect_dispatch.h"
 
 int

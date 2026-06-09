@@ -36,7 +36,6 @@ SOFTWARE.
 #include "dix/request_priv.h"
 #include "dix/screenint_priv.h"
 #include "include/shmint.h"
-#include "include/xvmcext.h"
 #include "Xext/panoramiX.h"
 #include "Xext/panoramiXsrv.h"
 #include "Xext/shm_priv.h"
@@ -46,10 +45,8 @@ SOFTWARE.
 #include "scrnintstr.h"
 #include "windowstr.h"
 #include "pixmapstr.h"
-#include "gcstruct.h"
 #include "dixstruct.h"
 #include "resource.h"
-#include "opaque.h"
 
 #include "xvdisp.h"
 

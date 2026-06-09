@@ -104,17 +104,13 @@ Equipment Corporation.
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include <X11/extensions/ge.h>
-#include <X11/extensions/XKBproto.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XI2proto.h>
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XI2.h>
 #include <X11/Xproto.h>
-#include <X11/extensions/ge.h>
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XI2.h>
-#include <X11/extensions/XKBproto.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XI2proto.h>
 
@@ -137,7 +133,6 @@ Equipment Corporation.
 #include "os/client_priv.h"
 #include "os/fmt.h"
 #include "os/log_priv.h"
-#include "os/probes_priv.h"
 #include "Xext/panoramiX.h"
 #include "Xext/panoramiXsrv.h"
 #include "xkb/xkbsrv_priv.h"
@@ -149,15 +144,12 @@ Equipment Corporation.
 #include "scrnintstr.h"
 #include "cursorstr.h"
 #include "dixstruct.h"
-#include "globals.h"
 #include "xace.h"
 #include "exglobals.h"
 #include "extnsionst.h"
-#include "dispatch.h"
 #include "dixstruct_priv.h"
 #include "eventstr.h"
 #include "enterleave.h"
-#include "mi.h"
 
 #define _XkbWantsDetectableAutoRepeat(c) \
         ((c)->xkbClientFlags&XkbPCF_DetectableAutoRepeatMask)

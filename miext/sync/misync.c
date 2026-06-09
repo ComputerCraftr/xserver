@@ -23,7 +23,7 @@
 
 #include <dix-config.h>
 
-#include "scrnintstr.h"
+#include "scrnintstr.h" /* IWYU pragma: keep */
 #include "misync_priv.h"
 #include "misyncstr.h"
 

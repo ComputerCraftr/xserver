@@ -47,8 +47,6 @@ SOFTWARE.
 
 #include "mi/mi_priv.h"
 
-#include "regionstr.h"
-#include "mistruct.h"
 
 void
 miStepDash(int dist,            /* distance to step */

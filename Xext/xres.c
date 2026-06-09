@@ -19,22 +19,15 @@
 #include "dix/rpcbuf_priv.h"
 #include "os/client_priv.h"
 #include "miext/extinit_priv.h"
-#include "Xext/xace.h"
 
 #include "misc.h"
 #include "os.h"
 #include "dixstruct.h"
 #include "extnsionst.h"
-#include "swaprep.h"
-#include "pixmapstr.h"
-#include "windowstr.h"
-#include "gcstruct.h"
 #include "protocol-versions.h"
 #include "list.h"
 #include "misc.h"
 #include "hashtable.h"
-#include "picturestr.h"
-#include "compint.h"
 
 Bool noResExtension = FALSE;
 

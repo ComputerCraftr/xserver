@@ -17,7 +17,6 @@
 
 #include <dix-config.h>
 
-#include <sys/types.h>
 #include <errno.h>
 #include <stdint.h>
 #include <stdlib.h>

@@ -28,7 +28,8 @@
 
 #include <dix-config.h>
 
-#include "os.h"
+#include <stdlib.h>
+
 #include "os/xsha1.h"
 
 #if defined(HAVE_SHA1_IN_LIBMD)  /* Use libmd for SHA1 */ \

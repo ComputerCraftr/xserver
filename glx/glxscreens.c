@@ -38,14 +38,11 @@
 #include "dix/colormap_priv.h"
 #include "include/extinit.h"
 
-#include <windowstr.h>
 #include <os.h>
 
 #include "privates.h"
 #include "glxserver.h"
-#include "glxutil.h"
 #include "glxext.h"
-#include "protocol-versions.h"
 #include "compositeext.h"
 
 static DevPrivateKeyRec glxScreenPrivateKeyRec;

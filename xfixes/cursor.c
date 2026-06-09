@@ -56,11 +56,9 @@
 #include "scrnintstr.h"
 #include "cursorstr.h"
 #include "servermd.h"
-#include "mipointer.h"
 #include "inputstr.h"
 #include "windowstr.h"
 #include "xace.h"
-#include "list.h"
 #include "xibarriers.h"
 
 static RESTYPE CursorClientType;

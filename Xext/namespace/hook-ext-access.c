@@ -2,10 +2,7 @@
 
 #include <dix-config.h>
 
-#include "dix/dix_priv.h"
 #include "dix/extension_priv.h"
-#include "dix/registry_priv.h"
-#include "Xext/xacestr.h"
 
 #include "namespace.h"
 #include "hooks.h"

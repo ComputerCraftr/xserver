@@ -2,7 +2,6 @@
 
 #include <dix-config.h>
 
-#include "dix/registry_priv.h"
 #include "os/client_priv.h"
 #include "os/auth.h"
 

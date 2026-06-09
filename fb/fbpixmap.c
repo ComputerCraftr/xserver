@@ -24,7 +24,7 @@
 
 #include <stdlib.h>
 
-#include "fb/fb_priv.h"
+#include "fb/fb_priv.h" /* IWYU pragma: keep */
 
 #ifdef FB_DEBUG
 static void fbInitializeDrawable(DrawablePtr pDrawable);

@@ -34,10 +34,8 @@
 #include <dix-config.h>
 
 #include "dix/dix_priv.h"
-#include "include/extinit.h"
 
 #include "extension_string.h"
-#include "opaque.h"
 
 #define SET_BIT(m,b)    (m[ (b) / 8 ] |=  (1U << ((b) % 8)))
 #define CLR_BIT(m,b)    (m[ (b) / 8 ] &= ~(1U << ((b) % 8)))

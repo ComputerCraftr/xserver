@@ -37,8 +37,6 @@
 #include <X11/Xproto.h>
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XI2.h>
-#include <X11/extensions/XIproto.h>
-#include <X11/extensions/XKBproto.h>
 
 #include "dix/input_priv.h"
 #include "dix/inpututils_priv.h"
@@ -46,24 +44,16 @@
 #include "include/extinit.h"
 #include "mi/mi_priv.h"
 #include "os/bug_priv.h"
-#include "os/probes_priv.h"
-#include "Xext/panoramiX.h"
-#include "Xext/panoramiXsrv.h"
 
 #include "misc.h"
-#include "resource.h"
 #include "inputstr.h"
 #include "scrnintstr.h"
 #include "cursorstr.h"
-#include "dixstruct.h"
-#include "globals.h"
 #include "mipointer.h"
 #include "eventstr.h"
-#include "eventconvert.h"
 #include "windowstr.h"
 #include "xkbsrv.h"
 #include "exglobals.h"
-#include "extnsionst.h"
 
 /* Number of motion history events to store. */
 #define MOTION_HISTORY_SIZE 256

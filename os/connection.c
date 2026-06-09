@@ -82,13 +82,10 @@ SOFTWARE.
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #ifdef CSRG_BASED
-#include <sys/param.h>
 #endif
-#include <netinet/tcp.h>
 #include <arpa/inet.h>
 #endif
 #ifndef WIN32
-#include <sys/uio.h>
 #endif
 
 #include "dix/dix_priv.h"
@@ -100,12 +97,9 @@ SOFTWARE.
 #include "os/io_priv.h"
 #include "os/log_priv.h"
 #include "os/osdep.h"
-#include "os/probes_priv.h"
 
 #include "misc.h"               /* for typedef of pointer */
 #include "dixstruct_priv.h"
-#include "globals.h"
-#include "xace.h"
 
 #ifdef HAVE_GETPEERUCRED
 #include <ucred.h>

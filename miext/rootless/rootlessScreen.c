@@ -31,23 +31,18 @@
 
 #include <dix-config.h>
 
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include <string.h>
 
 #include "dix/colormap_priv.h"
 #include "dix/screen_hooks_priv.h"
 #include "dix/screenint_priv.h"
-#include "include/colormapst.h"
 #include "include/mipict.h"
 #include "mi/mi_priv.h"
 
 #include "scrnintstr.h"
-#include "gcstruct.h"
 #include "pixmapstr.h"
 #include "windowstr.h"
-#include "propertyst.h"
 #include "picturestr.h"
 
 #include "rootlessCommon.h"

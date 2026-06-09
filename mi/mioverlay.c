@@ -2,8 +2,7 @@
 #include <dix-config.h>
 
 #include <X11/X.h>
-#include <X11/Xmd.h>
-#include <X11/extensions/shapeproto.h>
+#include <X11/extensions/shapeconst.h>
 
 #include "dix/cursor_priv.h"
 #include "dix/dix_priv.h"
@@ -21,7 +20,6 @@
 #include "mioverlay.h"
 #include "migc.h"
 
-#include "globals.h"
 
 typedef struct {
     RegionRec exposed;

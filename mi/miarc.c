@@ -51,7 +51,6 @@ SOFTWARE.
 #include <math.h>
 #include <X11/X.h>
 #include <X11/Xprotostr.h>
-#include <X11/Xfuncproto.h>
 
 #include "mi/mi_priv.h"
 
@@ -59,7 +58,6 @@ SOFTWARE.
 #include "gcstruct.h"
 #include "scrnintstr.h"
 #include "pixmapstr.h"
-#include "windowstr.h"
 #include "mifpoly.h"
 #include "mifillarc.h"
 

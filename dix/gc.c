@@ -50,6 +50,7 @@ SOFTWARE.
 #include <X11/X.h>
 #include <X11/Xmd.h>
 #include <X11/Xproto.h>
+#include <X11/fonts/font.h>
 
 #include "dix/gc_priv.h"
 #include "os/osdep.h"
@@ -58,7 +59,7 @@ SOFTWARE.
 #include "resource.h"
 #include "gcstruct.h"
 #include "pixmapstr.h"
-#include "dixfontstr.h"
+#include "dixfontstr.h" /* IWYU pragma: keep */
 #include "scrnintstr.h"
 #include "dixstruct.h"
 #include "privates.h"

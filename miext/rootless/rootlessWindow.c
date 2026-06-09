@@ -34,7 +34,6 @@
 #include <stddef.h>             /* For NULL */
 #include <limits.h>             /* For CHAR_BIT */
 #include <assert.h>
-#include <X11/Xatom.h>
 
 #include "dix/dix_priv.h"
 #include "dix/property_priv.h"

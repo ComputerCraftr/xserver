@@ -59,7 +59,6 @@ SOFTWARE.
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "windowstr.h"          /* window structure  */
 
 /***********************************************************************
  *

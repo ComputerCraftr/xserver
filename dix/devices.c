@@ -72,21 +72,15 @@ SOFTWARE.
 #include "xkb/xkbsrv_priv.h"
 
 #include "misc.h"
-#include "resource.h"
 #include "windowstr.h"
 #include "inputstr.h"
 #include "scrnintstr.h"
-#include "cursorstr.h"
 #include "dixstruct.h"
-#include "ptrveloc.h"
 #include "privates.h"
 #include "dispatch.h"
-#include "swaprep.h"
 #include "mipointer.h"
 #include "eventstr.h"
 #include "exglobals.h"
-#include "xiquerydevice.h"      /* for SizeDeviceClasses */
-#include "xiproperty.h"
 #include "enterleave.h"         /* for EnterWindow() */
 #include "xserver-properties.h"
 #include "xichangehierarchy.h"  /* For XISendDeviceHierarchyEvent */

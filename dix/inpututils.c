@@ -35,11 +35,11 @@
 #include "exglobals.h"
 #include "misc.h"
 #include "inputstr.h"
+#include "optionstr.h" /* IWYU pragma: keep */
 #include "xkbsrv.h"
 #include "xkbstr.h"
 #include "eventstr.h"
 #include "scrnintstr.h"
-#include "optionstr.h"
 
 /* Check if a button map change is okay with the device.
  * Returns -1 for BadValue, as it collides with MappingBusy. */

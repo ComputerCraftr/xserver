@@ -18,7 +18,7 @@ is" without express or implied warranty.
 #include <X11/X.h>
 #include <X11/Xdefs.h>
 #include <X11/Xproto.h>
-#include <X11/fonts/fontstruct.h>
+#include <X11/fonts/fontstruct.h> /* IWYU pragma: keep */
 
 #include <xcb/xcb.h>
 #include <xcb/xcb_aux.h>
@@ -26,15 +26,13 @@ is" without express or implied warranty.
 #include "regionstr.h"
 #include "gcstruct.h"
 #include "scrnintstr.h"
-#include "windowstr.h"
-#include "pixmapstr.h"
+#include "windowstr.h" /* IWYU pragma: keep */
+#include "pixmapstr.h" /* IWYU pragma: keep */
 #include "servermd.h"
 
 #include "xnest-xcb.h"
 
-#include "Display.h"
 #include "Screen.h"
-#include "XNGC.h"
 #include "XNFont.h"
 #include "GCOps.h"
 #include "Drawable.h"

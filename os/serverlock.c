@@ -65,7 +65,6 @@ OR PERFORMANCE OF THIS SOFTWARE.
 #include "os/osdep.h"
 
 #include "os.h"
-#include "opaque.h"
 
 /*
  * Explicit support for a server lock file like the ones used for UUCP.

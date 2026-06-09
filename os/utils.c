@@ -77,7 +77,7 @@ __stdcall unsigned long GetTickCount(void);
 #include <libgen.h>
 
 #include "input.h"
-#include "dixfont.h"
+#include "dixfontstr.h" /* IWYU pragma: keep */
 #include <X11/fonts/libxfont2.h>
 #include "osdep.h"
 
@@ -93,7 +93,6 @@ __stdcall unsigned long GetTickCount(void);
 #if !defined(WIN32)
 #include <sys/resource.h>
 #endif
-#include <sys/stat.h>
 #include <ctype.h>              /* for isspace */
 #include <stdarg.h>
 #include <stdlib.h>             /* for calloc() */
@@ -118,14 +117,11 @@ __stdcall unsigned long GetTickCount(void);
 #include "os/serverlock.h"
 #include "os/xhostname.h"
 #include "present/present_priv.h"
-#include "Xext/xf86bigfontsrv.h" /* XF86BigfontCleanup() */
 #include "xkb/xkbsrv_priv.h"
 
-#include "dixstruct.h"
 #include "picture.h"
 #include "miinitext.h"
 #include "dixstruct_priv.h"
-#include "dpmsproc.h"
 
 #define X_INCLUDE_NETDB_H
 #include <X11/Xos_r.h>

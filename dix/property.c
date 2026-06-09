@@ -50,7 +50,6 @@ SOFTWARE.
 #include <X11/Xproto.h>
 
 #include "dix/dix_priv.h"
-#include "dix/input_priv.h"
 #include "dix/property_priv.h"
 #include "dix/request_priv.h"
 #include "dix/window_priv.h"
@@ -62,7 +61,6 @@ SOFTWARE.
 #include "propertyst.h"
 #include "dixstruct.h"
 #include "dispatch.h"
-#include "swaprep.h"
 #include "xace.h"
 
 /*****************************************************************

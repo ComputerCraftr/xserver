@@ -23,17 +23,12 @@
 #include <dix-config.h>
 
 #include <stdlib.h>
-#include <X11/X.h>
 
 #include "dix/screen_hooks_priv.h"
 
 #include    "scrnintstr.h"
-#include    "windowstr.h"
-#include    "dixfontstr.h"
-#include    "mi.h"
+#include    "pixmapstr.h"
 #include    "regionstr.h"
-#include    "globals.h"
-#include    "gcstruct.h"
 #include    "shadow.h"
 
 static DevPrivateKeyRec shadowScrPrivateKeyRec;

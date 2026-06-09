@@ -29,18 +29,17 @@
 #include <stdint.h>
 #include <errno.h>
 #include <dlfcn.h>
-#include <sys/time.h>
 #include <GL/gl.h>
 #include <GL/glxtokens.h>
 #include <GL/internal/dri_interface.h>
 
-#include "miext/extinit_priv.h"
+#include "miext/extinit_priv.h" /* IWYU pragma: keep */
 
 #include <os.h>
-#include "glxserver.h"
-#include "glxext.h"
-#include "glxcontext.h"
-#include "glxscreens.h"
+#include "glxserver.h" /* IWYU pragma: keep */
+#include "glxext.h" /* IWYU pragma: keep */
+#include "glxcontext.h" /* IWYU pragma: keep */
+#include "glxscreens.h" /* IWYU pragma: keep */
 #include "glxdricommon.h"
 
 #define __ATTRIB(attrib, field) \

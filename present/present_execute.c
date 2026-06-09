@@ -21,7 +21,6 @@
  */
 #include <dix-config.h>
 
-#include <unistd.h>
 
 #include "present/present_priv.h"
 

@@ -52,7 +52,6 @@ DEALINGS IN THE SOFTWARE.
 
 #include <stdio.h>
 #include <ctype.h>
-#include <math.h>
 #include <X11/X.h>
 #include <X11/Xproto.h>
 #define	XK_CYRILLIC
@@ -65,7 +64,6 @@ DEALINGS IN THE SOFTWARE.
 #include "os.h"
 #include "misc.h"
 #include "inputstr.h"
-#include "eventstr.h"
 #include "xkbgeom_priv.h"
 
 /***====================================================================***/

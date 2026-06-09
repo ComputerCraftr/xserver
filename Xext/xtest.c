@@ -32,13 +32,12 @@
 #include <X11/Xproto.h>
 #include <X11/Xatom.h>
 #include <X11/extensions/xtestproto.h>
-#include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 
 #include "dix/input_priv.h"
 #include "dix/dix_priv.h"
 #include "dix/exevents_priv.h"
-#include "dix/inpututils_priv.h"
+#include "dix/inpututils_priv.h" /* IWYU pragma: keep */
 #include "dix/request_priv.h"
 #include "dix/screensaver_priv.h"
 #include "dix/window_priv.h"
@@ -47,8 +46,6 @@
 #include "miext/extinit_priv.h"
 #include "os/client_priv.h"
 #include "os/osdep.h"
-#include "Xext/panoramiX.h"
-#include "Xext/panoramiXsrv.h"
 
 #include "misc.h"
 #include "os.h"
@@ -63,7 +60,7 @@
 #include "exglobals.h"
 #include "mipointer.h"
 #include "xserver-properties.h"
-#include "eventstr.h"
+#include "eventstr.h" /* IWYU pragma: keep */
 
 Bool noTestExtensions = FALSE;
 

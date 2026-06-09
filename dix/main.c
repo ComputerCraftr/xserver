@@ -74,17 +74,13 @@ Equipment Corporation.
 ******************************************************************/
 
 #include <dix-config.h>
-#include <version-config.h>
 
-#include <pixman.h>
 #include <X11/X.h>
-#include <X11/Xos.h>            /* for unistd.h  */
-#include <X11/Xproto.h>
 #include <X11/fonts/font.h>
-#include <X11/fonts/fontstruct.h>
+#include <X11/fonts/fontstruct.h> /* IWYU pragma: keep */
+#include "dixfontstr.h" /* IWYU pragma: keep */
 #include <X11/fonts/libxfont2.h>
 
-#include "config/hotplug_priv.h"
 #include "dix/atom_priv.h"
 #include "dix/callback_priv.h"
 #include "dix/cursor_priv.h"
@@ -107,19 +103,14 @@ Equipment Corporation.
 #include "Xext/panoramiXsrv.h"
 
 #include "scrnintstr.h"
+#include "globals.h"
 #include "misc.h"
 #include "os.h"
-#include "windowstr.h"
 #include "resource.h"
 #include "dixstruct.h"
-#include "gcstruct.h"
 #include "extension.h"
-#include "cursorstr.h"
-#include "servermd.h"
 #include "dixfont.h"
-#include "extnsionst.h"
 #include "privates.h"
-#include "exevents.h"
 
 #ifdef DPMSExtension
 #include <X11/extensions/dpmsconst.h>

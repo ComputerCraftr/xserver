@@ -38,7 +38,6 @@ and Jim Haggerty of Metheus.
 #include <X11/Xmd.h>
 #include <X11/extensions/recordproto.h>
 
-#include "dix/cursor_priv.h"
 #include "dix/dix_priv.h"
 #include "dix/eventconvert.h"
 #include "dix/input_priv.h"
@@ -48,8 +47,6 @@ and Jim Haggerty of Metheus.
 #include "miext/extinit_priv.h"
 #include "os/client_priv.h"
 #include "os/osdep.h"
-#include "Xext/panoramiX.h"
-#include "Xext/panoramiXsrv.h"
 
 #include "dixstruct.h"
 #include "extnsionst.h"
@@ -57,8 +54,6 @@ and Jim Haggerty of Metheus.
 #include "swaprep.h"
 #include "inputstr.h"
 #include "scrnintstr.h"
-#include "globals.h"
-#include "cursor.h"
 
 #include "protocol-versions.h"
 

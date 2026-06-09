@@ -25,7 +25,7 @@
 
 #include <dix-config.h>
 
-#include <unistd.h>
+#include <unistd.h> /* IWYU pragma: keep */
 
 #include "config/hotplug_priv.h"
 

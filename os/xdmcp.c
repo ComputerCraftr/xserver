@@ -20,10 +20,8 @@
 #include "os/Xtrans.h"
 #endif
 
-#include <X11/Xos.h>
 
 #if !defined(WIN32)
-#include <sys/param.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
@@ -37,14 +35,10 @@
 
 #include "dix/dix_priv.h"
 #include "os/auth.h"
-#include "os/ossock.h"
 
 #include "misc.h"
-#include "osdep.h"
 #include "xdmcp.h"
 #include "xdmauth.h"
-#include "input.h"
-#include "dixstruct.h"
 
 #include "os/Xtrans.h"
 

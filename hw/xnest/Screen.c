@@ -18,7 +18,6 @@ is" without express or implied warranty.
 
 #include <X11/X.h>
 #include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 
 #include <xcb/xcb_icccm.h>
 
@@ -27,7 +26,6 @@ is" without express or implied warranty.
 
 #include "scrnintstr.h"
 #include "dix.h"
-#include "micmap.h"
 #include "resource.h"
 
 #include "xnest-xcb.h"
@@ -36,7 +34,8 @@ is" without express or implied warranty.
 #include "Screen.h"
 #include "XNGC.h"
 #include "GCOps.h"
-#include "Drawable.h"
+#include "XNWindow.h"
+#include "XNPixmap.h"
 #include "XNFont.h"
 #include "Color.h"
 #include "XNCursor.h"

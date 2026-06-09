@@ -49,7 +49,6 @@ SOFTWARE.
 #include <X11/Xprotostr.h>
 #include "pixmapstr.h"
 #include "gcstruct.h"
-#include "windowstr.h"
 #include "mi.h"
 
 void

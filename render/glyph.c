@@ -31,16 +31,8 @@
 
 #include "misc.h"
 #include "scrnintstr.h"
-#include "os.h"
-#include "regionstr.h"
-#include "validate.h"
-#include "windowstr.h"
-#include "input.h"
-#include "resource.h"
-#include "cursorstr.h"
-#include "dixstruct.h"
 #include "gcstruct.h"
-#include "servermd.h"
+#include "pixmapstr.h"
 #include "picturestr.h"
 #include "glyphstr_priv.h"
 

@@ -55,7 +55,6 @@ SOFTWARE.
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/exevents_priv.h"
 #include "dix/request_priv.h"
 #include "dix/rpcbuf_priv.h"

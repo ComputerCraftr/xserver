@@ -26,7 +26,6 @@
 
 #include "dix/screen_hooks_priv.h"
 #include "include/mipict.h"
-#include "os/osdep.h"
 
 #include    <X11/X.h>
 #include    "scrnintstr.h"
@@ -35,13 +34,10 @@
 #include    "dixfontstr.h"
 #include    <X11/fonts/fontstruct.h>
 #include    <X11/fonts/libxfont2.h>
-#include    "mi.h"
 #include    "regionstr.h"
-#include    "globals.h"
 #include    "gcstruct.h"
 #include    "damage.h"
 #include    "damagestr.h"
-#include    "glyphstr_priv.h"
 
 #define wrap(priv, real, mem, func) {\
     priv->mem = real->mem; \

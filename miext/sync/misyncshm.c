@@ -23,18 +23,15 @@
 #include <dix-config.h>
 
 #include <fcntl.h>
-#include <sys/mman.h>
 #include <unistd.h>
 #include <X11/xshmfence.h>
 
 #include "os/osdep.h"
 
-#include "scrnintstr.h"
 #include "misync_priv.h"
-#include "misyncstr.h"
+#include "misyncstr.h" /* IWYU pragma: keep */
 #include "misyncshm.h"
 #include "misyncfd.h"
-#include "pixmapstr.h"
 
 static DevPrivateKeyRec syncShmFencePrivateKey;
 
@@ -184,4 +181,3 @@ Bool miSyncShmScreenInit(ScreenPtr pScreen)
 
     return TRUE;
 }
-

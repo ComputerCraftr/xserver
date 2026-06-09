@@ -54,10 +54,8 @@ SOFTWARE.
 #include "dixfontstr.h"
 #include "scrnintstr.h"
 #include "gcstruct.h"
-#include "resource.h"
 #include "dix.h"
 #include "cursorstr.h"
-#include "opaque.h"
 #include "servermd.h"
 
 /*

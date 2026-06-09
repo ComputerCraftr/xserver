@@ -6,7 +6,6 @@
  */
 #include <dix-config.h>
 
-#include "dix/dix_priv.h"
 #include "dix/resource_priv.h"
 #include "include/input.h"
 #include "include/inputstr.h"

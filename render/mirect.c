@@ -25,11 +25,8 @@
 
 #include "include/mipict.h"
 
-#include "scrnintstr.h"
 #include "gcstruct.h"
 #include "pixmapstr.h"
-#include "windowstr.h"
-#include "mi.h"
 #include "picturestr.h"
 
 static void

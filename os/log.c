@@ -87,14 +87,12 @@ OR PERFORMANCE OF THIS SOFTWARE.
 #include <sys/stat.h>
 #include <time.h>
 #include <X11/Xfuncproto.h>
-#include <X11/Xos.h>
 
 #ifdef CONFIG_SYSLOG
 #include <syslog.h>
 #endif
 
 #include "dix/dix_priv.h"
-#include "dix/input_priv.h"
 #include "os/audit_priv.h"
 #include "os/bug_priv.h"
 #include "os/ddx_priv.h"
@@ -102,7 +100,6 @@ OR PERFORMANCE OF THIS SOFTWARE.
 #include "os/log_priv.h"
 #include "os/osdep.h"
 
-#include "opaque.h"
 
 #ifdef XF86BIGFONT
 #include "xf86bigfontsrv.h"

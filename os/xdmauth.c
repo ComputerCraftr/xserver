@@ -42,8 +42,6 @@ from The Open Group.
 #include "os/io_priv.h"
 #include "os/Xtrans.h"
 
-#include "os.h"
-#include "osdep.h"
 
 #ifdef XDMCP
 #include "xdmcp.h"
@@ -57,7 +55,6 @@ from The Open Group.
 static Bool authFromXDMCP;
 
 #ifdef XDMCP
-#include <X11/Xmd.h>
 #undef REQUEST
 #include <X11/Xdmcp.h>
 

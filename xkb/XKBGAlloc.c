@@ -28,9 +28,7 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 #include <stdio.h>
 #include <X11/X.h>
-#include <X11/Xproto.h>
 #include "misc.h"
-#include "inputstr.h"
 #include <xkbsrv.h>
 #include "xkbgeom_priv.h"
 

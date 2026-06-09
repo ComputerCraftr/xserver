@@ -22,12 +22,10 @@
 
 #include <dix-config.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/selection_priv.h"
 
 #include "xfixesint.h"
-#include "xace.h"
 
 static RESTYPE SelectionClientType, SelectionWindowType;
 static Bool SelectionCallbackRegistered = FALSE;

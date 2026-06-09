@@ -26,8 +26,6 @@
 #include "randr/randrstr_priv.h"
 #include "randr/rrdispatch_priv.h"
 
-#include "propertyst.h"
-#include "swaprep.h"
 
 static int
 DeliverPropertyEvent(WindowPtr pWin, void *value)

@@ -32,7 +32,6 @@ in this Software without prior written authorization from The Open Group.
 #include <X11/extensions/shapeproto.h>
 
 #include "dix/client_priv.h"
-#include "dix/dix_priv.h"
 #include "dix/gc_priv.h"
 #include "dix/request_priv.h"
 #include "dix/rpcbuf_priv.h"
@@ -44,15 +43,12 @@ in this Software without prior written authorization from The Open Group.
 #include "Xext/panoramiXsrv.h"
 
 #include "misc.h"
-#include "os.h"
 #include "windowstr.h"
 #include "scrnintstr.h"
 #include "pixmapstr.h"
 #include "extnsionst.h"
 #include "dixstruct.h"
-#include "opaque.h"
 #include "regionstr.h"
-#include "gcstruct.h"
 #include "protocol-versions.h"
 
 Bool noShapeExtension = FALSE;

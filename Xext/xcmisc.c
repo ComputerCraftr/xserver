@@ -33,17 +33,14 @@ from The Open Group.
 #include <X11/Xproto.h>
 #include <X11/extensions/xcmiscproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/resource_priv.h"
 #include "dix/rpcbuf_priv.h"
 #include "miext/extinit_priv.h"
 
 #include "misc.h"
-#include "os.h"
 #include "dixstruct.h"
 #include "extnsionst.h"
-#include "swaprep.h"
 
 static int
 ProcXCMiscGetVersion(ClientPtr client)

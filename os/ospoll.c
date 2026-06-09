@@ -25,7 +25,6 @@
 #include <assert.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 #ifdef WIN32
 #include <winsock2.h>
@@ -35,7 +34,6 @@
 #include "os/xserver_poll.h"
 
 #include "ospoll.h"
-#include "list.h"
 
 #if !HAVE_OSPOLL && defined(HAVE_POLLSET_CREATE)
 #include <sys/pollset.h>

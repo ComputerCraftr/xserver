@@ -17,7 +17,6 @@ is" without express or implied warranty.
 
 #include <X11/X.h>
 #include <X11/Xdefs.h>
-#include <X11/Xproto.h>
 
 #include <xcb/xcb.h>
 #include <xcb/xcb_aux.h>
@@ -28,15 +27,12 @@ is" without express or implied warranty.
 #include "cursorstr.h"
 #include "scrnintstr.h"
 #include "servermd.h"
-#include "mipointrst.h"
 
 #include "xnest-xcb.h"
 
 #include "Display.h"
 #include "Screen.h"
 #include "XNCursor.h"
-#include "Keyboard.h"
-#include "Args.h"
 
 xnestCursorFuncRec xnestCursorFuncs = { NULL };
 

@@ -28,7 +28,6 @@
 #include <dix-config.h>
 
 #include <X11/Xatom.h>
-#include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 #include <X11/extensions/XI2proto.h>
 
@@ -43,7 +42,6 @@
 #include "dix.h"
 #include "inputstr.h"
 #include "exglobals.h"
-#include "swaprep.h"
 #include "xiproperty.h"
 #include "xserver-properties.h"
 

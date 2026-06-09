@@ -37,7 +37,6 @@ from The Open Group.
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/exevents_priv.h"
 #include "dix/input_priv.h"
 #include "dix/request_priv.h"
@@ -45,7 +44,6 @@ from The Open Group.
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "windowstr.h"          /* window structure  */
 #include "xkbsrv.h"
 #include "xkbstr.h"
 

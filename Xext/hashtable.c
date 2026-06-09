@@ -8,7 +8,6 @@
 #include "hashtable.h"
 
 /* HashResourceID */
-#include "resource.h"
 
 #define INITHASHSIZE 6
 #define MAXHASHSIZE 11

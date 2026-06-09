@@ -52,15 +52,11 @@ SOFTWARE.
 #include "dix/cursor_priv.h"
 #include "dix/dix_priv.h"
 #include "dix/server_priv.h"
-#include "dix/settings_priv.h"
 
 #include "misc.h"
-#include "windowstr.h"
 #include "scrnintstr.h"
 #include "input.h"
-#include "dixfont.h"
 #include "dixstruct.h"
-#include "os.h"
 
 ScreenInfo screenInfo;
 

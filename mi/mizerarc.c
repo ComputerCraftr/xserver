@@ -40,7 +40,6 @@ Author:  Bob Scheifler, MIT X Consortium
 
 #include "mi/mi_priv.h"
 
-#include "regionstr.h"
 #include "gcstruct.h"
 #include "pixmapstr.h"
 #include "mizerarc.h"

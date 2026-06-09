@@ -55,15 +55,12 @@ SOFTWARE.
 #include <X11/extensions/XI.h>
 #include <X11/extensions/XIproto.h>
 
-#include "dix/dix_priv.h"
 #include "dix/request_priv.h"
 #include "dix/rpcbuf_priv.h"
 #include "dix/window_priv.h"
 #include "Xi/handlers.h"
 
 #include "inputstr.h"           /* DeviceIntPtr      */
-#include "windowstr.h"          /* window structs    */
-#include "swaprep.h"
 #include "getprop.h"
 
 extern XExtEventInfo EventInfo[];
