@@ -38,6 +38,7 @@
 #include "xf86Modes.h"
 #include "xf86RandR12.h"
 #include "xf86CursorPriv.h"
+#include "xf86CursorTransform.h"
 #include "picturestr.h"
 #include "cursorstr.h"
 #include "inputstr.h"
@@ -436,6 +437,29 @@ xf86_crtc_set_cursor_position(xf86CrtcPtr crtc, int x, int y)
     xf86CursorInfoPtr cursor_info = xf86_config->cursor_info;
     DisplayModePtr mode = &crtc->mode;
     int crtc_x = x, crtc_y = y;
+
+    if (crtc->driverIsPerformingTransform & XF86DriverTransformCursorRange) {
+        int crtc_width = xf86ModeWidth(mode, crtc->rotation);
+        int crtc_height = xf86ModeHeight(mode, crtc->rotation);
+        int cursor_width, cursor_height;
+
+        xf86CursorTransformedSize(crtc->rotation,
+                                  cursor_info->MaxWidth,
+                                  cursor_info->MaxHeight,
+                                  &cursor_width, &cursor_height);
+
+        if (!xf86CursorInScreenRange(crtc->x, crtc->y,
+                                     crtc_width, crtc_height,
+                                     cursor_width, cursor_height, x, y)) {
+            crtc->cursor_in_range = FALSE;
+            xf86_crtc_hide_cursor(crtc);
+        } else {
+            crtc->cursor_in_range = TRUE;
+            crtc->funcs->set_cursor_position(crtc, x, y);
+            xf86_crtc_show_cursor(crtc);
+        }
+        return;
+    }
 
     /*
      * Transform position of cursor on screen

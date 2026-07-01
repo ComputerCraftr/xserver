@@ -3,6 +3,7 @@ modesetting_srcs = [
     'driver.c',
     'drmmode_bo.c',
     'drmmode_display.c',
+    '../../../modes/xf86CursorTransform.c',
     'pageflip.c',
     'present.c',
     'vblank.c',

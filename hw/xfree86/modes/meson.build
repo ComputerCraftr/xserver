@@ -1,5 +1,6 @@
 srcs_xorg_modes = [
     'xf86Crtc.c',
+    'xf86CursorTransform.c',
     'xf86Cursors.c',
     'xf86gtf.c',
     'xf86EdidModes.c',

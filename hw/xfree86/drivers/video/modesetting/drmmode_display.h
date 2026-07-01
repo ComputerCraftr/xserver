@@ -31,6 +31,7 @@
 
 #include <X11/Xdefs.h>
 
+#include "xf86CursorTransform.h"
 #include "xf86drmMode.h"
 #ifdef CONFIG_UDEV_KMS
 #include "libudev.h"
@@ -232,6 +233,10 @@ typedef struct {
 
     int cursor_width;
     int cursor_height;
+    int cursor_source_hot_x;
+    int cursor_source_hot_y;
+    int cursor_hot_x;
+    int cursor_hot_y;
 
     Bool need_modeset;
     struct xorg_list mode_list;
@@ -246,9 +251,8 @@ typedef struct {
     uint32_t cursor_glyph_width;
     uint32_t cursor_glyph_height;
     int old_pitch;
-    int cursor_rotation;
-    int cursor_src_x;
-    int cursor_src_y;
+    Bool cursor_transform_valid;
+    xf86CursorPositionTransformRec cursor_transform;
 
     Bool cursor_probed;
     Bool cursor_dim_fallback_warned;

@@ -76,6 +76,7 @@ typedef enum _xf86DriverTransforms {
     XF86DriverTransformOutput = 1 << 0,
     XF86DriverTransformCursorImage = 1 << 1,
     XF86DriverTransformCursorPosition = 1 << 2,
+    XF86DriverTransformCursorRange = 1 << 3,
 } xf86DriverTransforms;
 
 
@@ -400,6 +401,10 @@ struct _xf86Crtc {
      *
      * XF86DriverTransformCursorPosition: Setting this flag causes the server
      * to pass the untransformed cursor position to the driver hook.
+     *
+     * XF86DriverTransformCursorRange: Setting this flag causes the server to
+     * use a cheap framebuffer-space range check and skip the transformed
+     * cursor position/range calculation before calling the driver hook.
      *
      * Added in ABI version 4, changed to xf86DriverTransforms in ABI version 7
      */

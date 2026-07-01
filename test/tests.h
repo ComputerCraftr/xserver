@@ -25,6 +25,7 @@ typedef void (*testfunc_t)(void);
 
 const testfunc_t* fixes_test(void);
 const testfunc_t* hashtabletest_test(void);
+const testfunc_t* cursor_transform_test(void);
 const testfunc_t* input_test(void);
 const testfunc_t* list_test(void);
 const testfunc_t* list_zeroinit_test(void);
@@ -50,4 +51,3 @@ const testfunc_t* protocol_eventconvert_test(void);
 const testfunc_t* xi2_test(void);
 
 #endif /* TESTS_H */
-
