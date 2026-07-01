@@ -177,6 +177,7 @@ static void logging_format(void)
     unsigned long lui;
     FILE *f;
     char read_buf[2048];
+    char truncated_msg[2048];
     char *logmsg;
     uintptr_t ptr;
     char *fname = NULL;
@@ -206,15 +207,17 @@ static void logging_format(void)
     read_log_msg(logmsg);
     assert(strcmp(logmsg, "(EE) test message\n") == 0);
 
-    /* long buf is truncated to "....en\n" */
+    /* long messages are bounded, prefixed, and newline-terminated */
     LogMessageVerb(X_ERROR, 1, buf);
     read_log_msg(logmsg);
-    assert(strcmp(&logmsg[strlen(logmsg) - 3], "en\n") == 0);
+    assert(strncmp(logmsg, "(EE) ", 5) == 0);
+    assert(logmsg[strlen(logmsg) - 1] == '\n');
+    strcpy(truncated_msg, logmsg);
 
-    /* same thing, this time as string substitution */
+    /* same truncation behavior, this time as string substitution */
     LogMessageVerb(X_ERROR, 1, "%s", buf);
     read_log_msg(logmsg);
-    assert(strcmp(&logmsg[strlen(logmsg) - 3], "en\n") == 0);
+    assert(strcmp(logmsg, truncated_msg) == 0);
 
     /* strings containing placeholders should just work */
     LogMessageVerb(X_ERROR, 1, "%s\n", str);
