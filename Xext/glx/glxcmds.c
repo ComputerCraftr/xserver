@@ -1136,10 +1136,27 @@ DoCreateGLXDrawable(ClientPtr client, __GLXscreen * pGlxScreen,
         return BadMatch;
 
     if (type == GLX_DRAWABLE_WINDOW) {
-        /* The GLX window id is a fresh, client-allocated resource id, so
-         * validate it like any other new resource (in the client's id range
-         * and not already in use). */
-        LEGAL_NEW_RESOURCE(glxDrawableId, client);
+        /*
+         * With GLXVND, the dispatch layer (dispatch_CreateWindow) validates the
+         * client-supplied GLX window XID and records it in the XID map before
+         * forwarding the request. Do not call LegalNewID() on mapped IDs because
+         * the map itself occupies the XID in the resource database.
+         *
+         * For non-GLXVND paths (or if the mapping is absent or associated with a
+         * different vendor), retain the normal LegalNewID() validation.
+         */
+        Bool is_mapped = FALSE;
+        if (glxServer.getXIDMap && glxServer.getVendorForScreen) {
+            GlxServerVendor *current_vendor = glxServer.getVendorForScreen(client, pDraw->pScreen);
+            if (current_vendor != NULL && glxServer.getXIDMap(glxDrawableId) == current_vendor) {
+                is_mapped = TRUE;
+            }
+        }
+
+        if (!is_mapped && !LegalNewID(glxDrawableId, client)) {
+            client->errorValue = glxDrawableId;
+            return BadIDChoice;
+        }
 
         /* A window may have only a single GLX drawable associated with it. We
          * register the __GLXdrawable under both the GLX window id and the X
