@@ -57,6 +57,8 @@
 #include "glxvndabi.h"
 #include "xace.h"
 
+extern RESTYPE idResource;
+
 static char GLXServerVendorName[] = "SGI";
 
 _X_HIDDEN int
@@ -1138,8 +1140,15 @@ DoCreateGLXDrawable(ClientPtr client, __GLXscreen * pGlxScreen,
     if (type == GLX_DRAWABLE_WINDOW) {
         /* The GLX window id is a fresh, client-allocated resource id, so
          * validate it like any other new resource (in the client's id range
-         * and not already in use). */
-        LEGAL_NEW_RESOURCE(glxDrawableId, client);
+         * and not already in use, unless it is registered by GLXVND's idResource). */
+        if (!LegalNewID(glxDrawableId, client)) {
+            void *val;
+            if (idResource == X11_RESTYPE_NONE ||
+                dixLookupResourceByType(&val, glxDrawableId, idResource, serverClient, DixGetAttrAccess) != Success) {
+                client->errorValue = glxDrawableId;
+                return BadIDChoice;
+            }
+        }
 
         /* A window may have only a single GLX drawable associated with it. We
          * register the __GLXdrawable under both the GLX window id and the X
